@@ -3,7 +3,7 @@ import sys
 import os
 sys.path.append(os.getcwd())
 
-from dealership.models.vehicle import Vehicle
+from dealership.classes.vehicle import Vehicle
 
 vehicle1 = Vehicle(2002, 'Pontiac', 'Grand Prix', 150000, 5000)
 vehicle2 = Vehicle(2002, 'Pontiac', 'Grand Prix', 150000, -1)

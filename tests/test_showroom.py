@@ -3,7 +3,7 @@ import sys
 import os
 sys.path.append(os.getcwd())
 
-from dealership.models.showroom import Showroom
+from dealership.classes.showroom import Showroom
 
 showroom1 = Showroom("Showroom 1", -1)
 showroom2 = Showroom("Showroom 2", 0)
