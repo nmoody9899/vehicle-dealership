@@ -22,9 +22,17 @@ class Vehicle:
     def price(self):
         return self.__price
 
+    @price.setter
+    def price(self, price):
+        self.__price = price
+
     @property
     def mileage(self):
         return self.__mileage 
+
+    @price.setter
+    def mileage(self, mileage):
+        self.__mileage = mileage
 
     @property
     def year_make_mode(self):

@@ -10,9 +10,17 @@ class Showroom:
     def name(self):
         return self.__name
 
+    @name.setter
+    def name(self, name):
+        self.__name = name
+
     @property
     def capacity(self):
         return self.__capacity
+
+    @capacity.setter
+    def capacity(self, capacity):
+        self.__capacity = capacity
 
     @property
     def vehicles(self):
@@ -23,7 +31,3 @@ class Showroom:
             raise ValueError('ERROR: The showroom is already at capacity.')
         else:
             self.__vehicles.append(vehicle)
-
-showroom1 = Showroom("Showroom 1", -1)
-print(showroom1.capacity)
-print(showroom1.name)

@@ -10,9 +10,17 @@ class Dealership:
     def name(self):
         return self.__name
 
+    @name.setter
+    def name(self, name):
+        self.__name = name
+
     @property
     def capacity(self):
         return self.__capacity
+
+    @capacity.setter
+    def capacity(self, capacity):
+        self.__capacity = capacity
 
     @property
     def showrooms(self):
